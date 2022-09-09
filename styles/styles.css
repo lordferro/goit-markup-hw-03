@@ -7,7 +7,8 @@
     --accent-color: #2196F3;
     --secondary-background-color: #2F303A;
     --background-filter-buttons: #F5F4FA;
-    --border-color: #ececec;
+    --logo-border-color: #ececec;
+    --portfolio-border-color: #eeeeee;
     --portfolio-grid-gap: 30px;
 }
 
@@ -66,7 +67,7 @@ body {
 .page-header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--border-color) ; 
+    border-bottom: 1px solid var(--logo-border-color) ; 
 }
 
 /* Navigation */
@@ -353,19 +354,22 @@ body {
     margin-top: calc(-1 * var(--portfolio-grid-gap));
 }
 
-.element-filter .item {
+.element-filter .item {    
     flex-basis: calc(100% / 3 - var(--portfolio-grid-gap));
     margin-left: var(--portfolio-grid-gap);
     margin-top: var(--portfolio-grid-gap);
+    /* border: 1px solid var(--portfolio-border-color) ; */
+    
 }   
 
 .element-filter a {
     text-decoration: none;
+    
 
 }
 
 .element-description {
-    margin: 20px 24px;
+    padding: 20px 24px;
 }
 
 .element-filter .title {
@@ -374,7 +378,7 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
 
-    margin-bottom: 4px;
+    padding-bottom: 4px;
 }
 
 .job-type {
