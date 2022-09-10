@@ -355,10 +355,10 @@ body {
 }
 
 .element-filter .item {    
-    flex-basis: calc(100% / 3 - var(--portfolio-grid-gap));
+    width: calc(100% / 3 - var(--portfolio-grid-gap));
     margin-left: var(--portfolio-grid-gap);
     margin-top: var(--portfolio-grid-gap);
-    /* border: 1px solid var(--portfolio-border-color) ; */
+    border: 1px solid var(--portfolio-border-color) ;
     
 }   
 
